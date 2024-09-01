@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matter-edit"
+description = "edit Jekyll-style YAML front matter with values of passed parameters"
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = "==3.12.*"
+dependencies = [
+    "python-frontmatter~=1.0"
+]
+dynamic = ["version"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.dynamic]
+version = {attr = "matteredit.version.version"}
+
+[tool.setuptools_scm]
+write_to = "src/matteredit/version.py"
+version_scheme = "python-simplified-semver"
+local_scheme = "no-local-version"
