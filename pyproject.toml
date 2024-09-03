@@ -7,10 +7,6 @@ name = "matter-edit"
 description = "edit Jekyll-style YAML front matter with values of passed parameters"
 readme = "README.md"
 license = {file = "LICENSE"}
-classifiers = [
-    "Programming Language :: Python :: 3.10",
-]
-requires-python = "==3.10.*"
 dependencies = [
     "python-frontmatter~=1.0"
 ]
